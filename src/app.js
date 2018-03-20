@@ -21,17 +21,20 @@ store.subscribe(() => {
 
 const waterBill = store.dispatch(addExpense({
     description: "Water Bill",
+    amount: 200000,
+    createdAt: -21000
 }))
 const gasBill = store.dispatch(addExpense({
     description: "Gas Bill",
+    amount: 2000,
+    createdAt: 1000
+}))
+const rent = store.dispatch(addExpense({
+    description: "Rent",
+    amount: 1000,
+    createdAt: 2000
 }))
 
-store.dispatch(setTextFilter("bill"));
-store.dispatch(setTextFilter("water"));
-
-setTimeout(() => {
-    store.dispatch(setTextFilter("Gas"));
-}, 3000)
 const jsx = (
     <Provider store={store}>
         <AppRouter />
