@@ -7,7 +7,6 @@ export default (expenses, {text, sortBy, startDate, endDate}) => {
 
         return startDateMatch && endDateMatch && textMatch;
     }).sort((a, b) => {
-        console.log("sortBy", sortBy)
         if(sortBy === "date") {
             return a.createdAt < b.createdAt ? 1 : -1;
         }
