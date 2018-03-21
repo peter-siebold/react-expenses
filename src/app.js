@@ -22,12 +22,12 @@ store.subscribe(() => {
 const waterBill = store.dispatch(addExpense({
     description: "Water Bill",
     amount: 200000,
-    createdAt: -21000
+    createdAt: 1522231200000
 }))
 const gasBill = store.dispatch(addExpense({
     description: "Gas Bill",
     amount: 2000,
-    createdAt: 1000
+    createdAt: 1520161200000
 }))
 const rent = store.dispatch(addExpense({
     description: "Rent",
