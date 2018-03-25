@@ -12,28 +12,11 @@ import getVisibileExpenses from "./selectors/expenses";
 import "normalize.css/normalize.css"
 import "./styles/styles.scss";
 import "react-dates/lib/css/_datepicker.css";
-
 const store = configureStore();
 store.subscribe(() => {
     const state = store.getState();
     const visibleExpenses = getVisibileExpenses(state.expenses, state.filters);
 })
-
-const waterBill = store.dispatch(addExpense({
-    description: "Water Bill",
-    amount: 200000,
-    createdAt: 1522231200000
-}))
-const gasBill = store.dispatch(addExpense({
-    description: "Gas Bill",
-    amount: 2000,
-    createdAt: 1520161200000
-}))
-const rent = store.dispatch(addExpense({
-    description: "Rent",
-    amount: 1000,
-    createdAt: 2000
-}))
 
 const jsx = (
     <Provider store={store}>
