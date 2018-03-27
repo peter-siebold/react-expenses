@@ -1,11 +1,14 @@
 import * as firebase from "firebase";
 
-// const config = {
+firebase.initializeApp(config);
 
-//   };
-//   firebase.initializeApp(config);
+const database = firebase.database();
 
-// const database = firebase.database();
+export {
+    firebase,
+    database as default
+}
+
 //   database.ref().set({
 //       name : "Arthur Dent",
 //       age: 30,
