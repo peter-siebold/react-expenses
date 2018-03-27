@@ -60,4 +60,4 @@ typings/
 # dist folder with generated bundle files
 public/dist/
 
-config/firebase.js
+src/config/firebase.config.js
