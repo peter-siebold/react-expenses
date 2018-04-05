@@ -8,7 +8,7 @@ exports[`should render AddExpensePage correctly 1`] = `
     expense={
       Object {
         "amount": 650,
-        "createdAt": -345600000,
+        "createdAt": -349200000,
         "description": "Rent",
         "id": "2",
         "note": "",

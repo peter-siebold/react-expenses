@@ -61,3 +61,6 @@ typings/
 public/dist/
 
 src/config/firebase.config.js
+
+.env.test
+.env.development
